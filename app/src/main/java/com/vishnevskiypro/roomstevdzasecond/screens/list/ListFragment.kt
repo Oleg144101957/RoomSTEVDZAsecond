@@ -10,9 +10,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSnapHelper
-import androidx.recyclerview.widget.SnapHelper
 import com.vishnevskiypro.roomstevdzasecond.R
-import com.vishnevskiypro.roomstevdzasecond.data.UserViewModel
+import com.vishnevskiypro.roomstevdzasecond.viewmodel.UserViewModel
 import com.vishnevskiypro.roomstevdzasecond.databinding.FragmentListBinding
 
 

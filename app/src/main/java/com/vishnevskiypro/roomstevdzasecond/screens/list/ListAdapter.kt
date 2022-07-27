@@ -3,9 +3,10 @@ package com.vishnevskiypro.roomstevdzasecond.screens.list
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.vishnevskiypro.roomstevdzasecond.R
-import com.vishnevskiypro.roomstevdzasecond.data.User
+import com.vishnevskiypro.roomstevdzasecond.model.User
 import com.vishnevskiypro.roomstevdzasecond.databinding.ItemUserBinding
 
 class ListAdapter : RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
@@ -41,6 +42,11 @@ class ListAdapter : RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
                 firstNameText.text = user.firstName
                 lastNameText.text = user.secondName
                 ageText.text = user.age.toString()
+                rowLayout.setOnClickListener {
+                    //https://www.youtube.com/watch?v=5rfBU75sguk&list=PLSrm9z4zp4mEPOfZNV9O-crOhoMa0G2-o&index=5 - 5:52  and comments about build.gradles files
+                    val action = ListFragmentDirections.actionListFragmentToUpdateFragment(currentUser = user)
+                    binding.root.findNavController().navigate(action)
+                }
             }
 
         }

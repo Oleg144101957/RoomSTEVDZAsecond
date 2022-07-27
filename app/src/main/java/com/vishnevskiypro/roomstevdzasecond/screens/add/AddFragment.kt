@@ -11,8 +11,8 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.vishnevskiypro.roomstevdzasecond.R
-import com.vishnevskiypro.roomstevdzasecond.data.User
-import com.vishnevskiypro.roomstevdzasecond.data.UserViewModel
+import com.vishnevskiypro.roomstevdzasecond.model.User
+import com.vishnevskiypro.roomstevdzasecond.viewmodel.UserViewModel
 import com.vishnevskiypro.roomstevdzasecond.databinding.FragmentAddBinding
 
 class AddFragment : Fragment(R.id.addFragment) {
